@@ -1,0 +1,3 @@
+# simple_notes
+
+A simple note-taking app written in Flutter/Dart that emulates a certain Google app...
