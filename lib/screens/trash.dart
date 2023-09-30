@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 import 'package:simple_notes/screens/widgets/navigation_drawer.dart';
-import 'package:simple_notes/screens/widgets/floating_search_bar.dart';
+import 'package:simple_notes/screens/widgets/trash_bar.dart';
 
-class HomeScreen extends StatefulWidget {
+class TrashScreen extends StatefulWidget {
   @override
-  State<HomeScreen> createState() => HomeScreenState();
+  State<TrashScreen> createState() => TrashScreenState();
 }
 
-class HomeScreenState extends State<HomeScreen> {
+class TrashScreenState extends State<TrashScreen> {
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 
   @override
@@ -24,7 +24,7 @@ class HomeScreenState extends State<HomeScreen> {
         padding: EdgeInsets.all(8.0),
         child: Column(
           children: [
-            FloatingSearchBar(
+            TrashBar(
               onMenuPressed: () {
                 scaffoldKey.currentState?.openDrawer();
               },

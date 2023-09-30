@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screens/home.dart';
+import 'package:simple_notes/screens/home.dart';
 
 void main() {
   runApp(SimpleNotes());

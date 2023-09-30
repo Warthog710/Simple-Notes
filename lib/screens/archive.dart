@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-
+import 'package:simple_notes/screens/widgets/archive_bar.dart';
 import 'package:simple_notes/screens/widgets/navigation_drawer.dart';
-import 'package:simple_notes/screens/widgets/floating_search_bar.dart';
 
-class HomeScreen extends StatefulWidget {
+class ArchiveScreen extends StatefulWidget {
   @override
-  State<HomeScreen> createState() => HomeScreenState();
+  State<ArchiveScreen> createState() => ArchiveScreenState();
 }
 
-class HomeScreenState extends State<HomeScreen> {
+class ArchiveScreenState extends State<ArchiveScreen> {
   final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
 
   @override
@@ -24,11 +23,9 @@ class HomeScreenState extends State<HomeScreen> {
         padding: EdgeInsets.all(8.0),
         child: Column(
           children: [
-            FloatingSearchBar(
-              onMenuPressed: () {
-                scaffoldKey.currentState?.openDrawer();
-              },
-            )
+            ArchiveBar(onMenuPressed: () {
+              scaffoldKey.currentState?.openDrawer();
+            }),
           ],
         ),
       ),
